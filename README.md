@@ -89,6 +89,9 @@ config :ueberauth, Ueberauth,
   ]
 ```
 
+## Phoenix Integration
+if you have phoenix installed you can import Rumble.Oauth2.Components.Core
+and call the login button in your view
 
 ## License
 

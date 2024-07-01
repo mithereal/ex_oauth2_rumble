@@ -45,6 +45,7 @@ defmodule Rumble.Oauth2.Mixfile do
       {:castore, "~> 1.0", optional: true},
       {:certifi, ">= 0.0.0", optional: true},
       {:ssl_verify_fun, ">= 0.0.0", optional: true},
+      {:phoenix, "~> 1.7.1", optional: true},
       {:jason, "~> 1.0"},
       {:earmark, ">= 0.0.0", only: :dev}
     ]
