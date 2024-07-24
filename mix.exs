@@ -1,7 +1,7 @@
 defmodule Rumble.Oauth2.Mixfile do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @url "https://github.com/mithereal/ex_oauth2_rumble"
 
   def project do

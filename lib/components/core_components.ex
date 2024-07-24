@@ -12,10 +12,13 @@ case Code.ensure_loaded(Phoenix.Component) do
 
          <.login_button  />
       """
+      attr(:title, :any, required: false, default: "Rumble")
+      attr(:min_x, :any, required: false, default: "0")
+      attr(:min_y, :any, required: false, default: "0")
       attr(:width, :any, required: false, default: "24")
       attr(:height, :any, required: false, default: "24")
       attr(:style, :any, required: false, default: "display:flex;")
-      attr(:title, :any, required: false, default: "Rumble")
+      attr(:svg_fill, :any, required: false, default: "none")
       attr(:url, :any, required: false, default: "/")
       attr(:class, :any, required: false, default: "rumble_login_button")
       attr(:a_class, :any, required: false, default: "rumble_login_button")
@@ -33,7 +36,7 @@ case Code.ensure_loaded(Phoenix.Component) do
         ~H"""
         <div class="{@class}" style="{@style}">
         <a href="{@url}" class="{@a_class}">
-        <svg width="{@width}" height="{@height}" viewBox="0 0 {@width} {@height}" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="{@width}" height="{@height}" viewBox="{@min_x} {@min_y} {@width} {@height}" fill="{@svg_fill}" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="{@fill_rule}" clip-rule="{@clip_rule}" d="{@d}" fill="{@fill}"></path>
         </svg>
         {@title}
