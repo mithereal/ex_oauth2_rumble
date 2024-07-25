@@ -1,7 +1,7 @@
 defmodule Rumble.Oauth2.Mixfile do
   use Mix.Project
 
-  @version "0.1.1"
+  @version "0.1.2"
   @url "https://github.com/mithereal/ex_oauth2_rumble"
 
   def project do
@@ -35,7 +35,7 @@ defmodule Rumble.Oauth2.Mixfile do
   defp deps do
     [
       {:oauth2, "~> 1.0 or ~> 2.0"},
-      {:ueberauth, "~> 0.7.0"},
+      {:ueberauth, "~> 0.7.0", optional: true},
       {:credo, "~> 0.8", only: [:dev, :test]},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:bandit, ">= 0.0.0", only: :test},
